@@ -4,9 +4,83 @@
 <head>
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Markit - Digital Marketplace HTML5 Template </title>
-   <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>Isai Tamil Records - Blog</title>
+   <meta name="description"
+      content="Discover the latest news and insights on music distribution, independent artists, and more. Read the Isai Tamil Records blog for expert tips and advice.">
+   <meta name="keywords"
+      content="music distribution, independent artists, music marketing, music promotion, music industry, Isai Tamil Records Blog">
+
+   <!-- Open Graph / Facebook -->
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="Isai Tamil Records - Blog">
+   <meta property="og:description"
+      content="Discover the latest news and insights on music distribution, independent artists, and more. Read the Isai Tamil Records blog for expert tips and advice.">
+   <meta property="og:image" content="https://blog.isaitamilrecords.com/assets/img/banner.png">
+   <meta property="og:url" content="https://blog.isaitamilrecords.com/">
+
+   <!-- Twitter -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Isai Tamil Records - Blog">
+   <meta name="twitter:description"
+      content="Discover the latest news and insights on music distribution, independent artists, and more. Read the Isai Tamil Records blog for expert tips and advice.">
+   <meta name="twitter:image" content="https://blog.isaitamilrecords.com/assets/img/banner.png">
+
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "Organization",
+         "name": "Isai Tamil Records",
+         "logo": {
+            "@type": "ImageObject",
+            "url": "https://isaitamilrecords.com/images/Isai%20Tamil%20Records.jpg",
+            "width": 600,
+            "height": 600
+         },
+         "url": "https://isaitamilrecords.com",
+         "sameAs": [
+            "https://www.facebook.com/isaitamilrecords/",
+            "https://www.instagram.com/isai_tamil_records/",
+            "https://www.linkedin.com/company/isaitamilrecords",
+            "https://twitter.com/IsaiTamilRecord",
+            "https://www.youtube.com/isaitamilrecords"
+         ],
+      }
+   </script>
+
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "WebSite",
+         "name": "Isai Tamil Records Blog",
+         "url": "https://blog.isaitamilrecords.com",
+         "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://blog.isaitamilrecords.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+         }
+      }
+   </script>
+
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "BreadcrumbList",
+         "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Isai Tamil Records",
+            "item": "https://isaitamilrecords.com"
+         }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://blog.isaitamilrecords.com"
+         }]
+      }
+   </script>
+
    <!-- Place favicon.ico in the root directory -->
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
    <!-- CSS here -->
@@ -117,9 +191,8 @@
                         <a href="sign-in.html"><i class="far fa-unlock"></i> Log In</a>
                      </div>
                      <div class="header__cart d-none d-sm-block">
-                        <a href="javascript:void(0);" class="cart-toggle-btn">
-                           <i class="far fa-shopping-cart"></i>
-                           <span>3</span>
+                        <a href="javascript:void(0);">
+                           <i class="far fa-sun"></i>
                         </a>
                      </div>
                      <div class="sidebar__menu d-lg-none">
@@ -137,97 +210,6 @@
    </header>
    <!-- header area end -->
 
-   <!-- cart mini area start -->
-   <div class="cartmini__area">
-      <div class="cartmini__wrapper">
-         <div class="cartmini__title">
-            <h4>Shopping cart</h4>
-         </div>
-         <div class="cartmini__close">
-            <button type="button" class="cartmini__close-btn"><i class="fal fa-times"></i></button>
-         </div>
-         <div class="cartmini__widget">
-            <div class="cartmini__inner">
-               <ul>
-                  <li>
-                     <div class="cartmini__thumb">
-                        <a href="product-details.html">
-                           <img src="assets/img/product/sm/cart-5.jpg" alt="">
-                        </a>
-                     </div>
-                     <div class="cartmini__content">
-                        <h5><a href="product-details.html">Findup - Directory & Listing</a></h5>
-                        <div class="product-quantity mt-10 mb-10">
-                           <span class="cart-minus">-</span>
-                           <input class="cart-input" type="text" value="1" />
-                           <span class="cart-plus">+</span>
-                        </div>
-                        <div class="product__sm-price-wrapper">
-                           <span>2 <i class="fal fa-times"></i></span>
-                           <span class="product__sm-price">$24.00</span>
-                        </div>
-                     </div>
-                     <a href="#" class="cartmini__del"><i class="fal fa-times"></i></a>
-                  </li>
-                  <li>
-                     <div class="cartmini__thumb">
-                        <a href="product-details.html">
-                           <img src="assets/img/product/sm/cart-2.jpg" alt="">
-                        </a>
-                     </div>
-                     <div class="cartmini__content">
-                        <h5><a href="product-details.html">TechBuzz - Businesses Agency</a></h5>
-                        <div class="product-quantity mt-10 mb-10">
-                           <span class="cart-minus">-</span>
-                           <input class="cart-input" type="text" value="1" />
-                           <span class="cart-plus">+</span>
-                        </div>
-                        <div class="product__sm-price-wrapper">
-                           <span>1 <i class="fal fa-times"></i></span>
-                           <span class="product__sm-price">$17.00</span>
-                        </div>
-                     </div>
-                     <a href="#" class="cartmini__del"><i class="fal fa-times"></i></a>
-                  </li>
-                  <li>
-                     <div class="cartmini__thumb">
-                        <a href="product-details.html">
-                           <img src="assets/img/product/sm/cart-3.jpg" alt="">
-                        </a>
-                     </div>
-                     <div class="cartmini__content">
-                        <h5><a href="product-details.html">Zibber - Agency Template</a></h5>
-                        <div class="product-quantity mt-10 mb-10">
-                           <span class="cart-minus">-</span>
-                           <input class="cart-input" type="text" value="1" />
-                           <span class="cart-plus">+</span>
-                        </div>
-                        <div class="product__sm-price-wrapper">
-                           <span>5 <i class="fal fa-times"></i></span>
-                           <span class="product__sm-price">$72.00</span>
-                        </div>
-                     </div>
-                     <a href="#" class="cartmini__del"><i class="fal fa-times"></i></a>
-                  </li>
-               </ul>
-            </div>
-            <div class="cartmini__checkout">
-               <div class="cartmini__checkout-title mb-30">
-                  <h4>Subtotal:</h4>
-                  <span>$113.00</span>
-               </div>
-               <div class="cartmini__checkout-btn">
-                  <a href="#" class="m-btn m-btn-border mb-10 w-100"> <span></span> view cart</a>
-                  <a href="#" class="m-btn m-btn-3 w-100"> <span></span> checkout</a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="body-overlay"></div>
-   <!-- cart mini area end -->
-
-
    <!-- sidebar area start -->
    <div class="sidebar__area">
       <div class="sidebar__wrapper">
@@ -240,7 +222,7 @@
          <div class="sidebar__content">
             <div class="logo mb-40">
                <a href="index.html">
-                  <img src="assets/img/logo/logo-white.png" alt="logo">
+                  <img width="100" src="assets/img/logo/logo-white.png" alt="logo">
                </a>
             </div>
             <div class="mobile-menu"></div>
@@ -306,24 +288,25 @@
                         <div class="postbox__content">
                            <div class="postbox__meta d-flex mb-10">
                               <div class="postbox__tag mr-20">
-                                 <a href="#">marketing</a>
+                                 <a href="#">Music Distribution</a>
                               </div>
                               <div class="postbox__date">
-                                 <span><i class="fal fa-clock"></i> October 15, 2021</span>
+                                 <span><i class="fal fa-clock"></i> April 1, 2023</span>
                               </div>
                            </div>
                            <h3 class="postbox__title mb-15"><a
                                  href="the-Importance-of-Music-Distribution-for-independent-artists.html">The Importance
                                  of Music Distribution for Independent Artists.</a></h3>
                            <div class="postbox__text mb-20">
-                              <p>The little rotter absolutely bladdered wind up victoria sponge starkers cack posh jolly
-                                 good lost the plot nancy boy bonnet plastered.</p>
+                              <p>Discover why music distribution is essential for independent artists and how it can
+                                 boost their reach and revenue.</p>
                            </div>
                            <div class="postbox__author d-flex align-items-center">
                               <div class="postbox__author-thumb mr-15">
                                  <img src="https://isaitamilrecords.com/images/Team/Abishek_Mahi.jpg" alt="">
                               </div>
-                              <h5>Post by <a href="https://isaitamilrecords.com/artist/Abishek-Mahi">Abishek Mahi</a> </h5>
+                              <h5>Post by <a href="https://isaitamilrecords.com/artist/Abishek-Mahi">Abishek Mahi</a>
+                              </h5>
                            </div>
                         </div>
                      </article>
@@ -490,44 +473,41 @@
                               <div class="rc__post-wrapper">
                                  <div class="rc__post d-flex align-items-center">
                                     <div class="rc__thumb mr-15">
-                                       <a href="the-Importance-of-Music-Distribution-for-independent-artists.html"><img
-                                             src="assets/img/blog/sm/blog-sm-1.jpg" alt=""></a>
+                                       <a href="blog-details.html"><img src="assets/img/blog/sm/blog-sm-1.jpg"
+                                             alt=""></a>
                                     </div>
                                     <div class="rc__content">
                                        <div class="rc__meta">
                                           <span>October 15, 2021</span>
                                        </div>
-                                       <h6 class="rc__title"><a
-                                             href="the-Importance-of-Music-Distribution-for-independent-artists.html">Communication
-                                             Between Departments</a></h6>
+                                       <h6 class="rc__title"><a href="blog-details.html">Communication Between
+                                             Departments</a></h6>
                                     </div>
                                  </div>
                                  <div class="rc__post d-flex align-items-center">
                                     <div class="rc__thumb mr-15">
-                                       <a href="the-Importance-of-Music-Distribution-for-independent-artists.html"><img
-                                             src="assets/img/blog/sm/blog-sm-2.jpg" alt=""></a>
+                                       <a href="blog-details.html"><img src="assets/img/blog/sm/blog-sm-2.jpg"
+                                             alt=""></a>
                                     </div>
                                     <div class="rc__content">
                                        <div class="rc__meta">
                                           <span>March 26, 2021</span>
                                        </div>
-                                       <h6 class="rc__title"><a
-                                             href="the-Importance-of-Music-Distribution-for-independent-artists.html">How
-                                             to build outside links for your shop SEO</a></h6>
+                                       <h6 class="rc__title"><a href="blog-details.html">How to build outside links for
+                                             your shop SEO</a></h6>
                                     </div>
                                  </div>
                                  <div class="rc__post d-flex align-items-center">
                                     <div class="rc__thumb mr-15">
-                                       <a href="the-Importance-of-Music-Distribution-for-independent-artists.html"><img
-                                             src="assets/img/blog/sm/blog-sm-3.jpg" alt=""></a>
+                                       <a href="blog-details.html"><img src="assets/img/blog/sm/blog-sm-3.jpg"
+                                             alt=""></a>
                                     </div>
                                     <div class="rc__content">
                                        <div class="rc__meta">
                                           <span>October 15, 2021</span>
                                        </div>
-                                       <h6 class="rc__title"><a
-                                             href="the-Importance-of-Music-Distribution-for-independent-artists.html">20
-                                             creative content ideas to post on Instagram</a></h6>
+                                       <h6 class="rc__title"><a href="blog-details.html">20 creative content ideas to
+                                             post on Instagram</a></h6>
                                     </div>
                                  </div>
                               </div>
@@ -540,11 +520,11 @@
                            <div class="sidebar__widget-content">
                               <div class="sidebar__catagory">
                                  <ul>
-                                    <li><a href="blog.html">Web Design (6)</a></li>
-                                    <li><a href="blog.html"> Web Development (14)</a></li>
-                                    <li><a href="blog.html">Graphics (12)</a></li>
-                                    <li><a href="blog.html">IOS/Android Design (10)</a></li>
-                                    <li><a href="blog.html">App & Saas (4)</a></li>
+                                    <li><a href="blog.html">Music Distribution (6)</a></li>
+                                    <li><a href="blog.html">Record Label (14)</a></li>
+                                    <li><a href="blog.html">Royalty (12)</a></li>
+                                    <li><a href="blog.html">Independent Artists (10)</a></li>
+                                    <li><a href="blog.html">Music Industry (4)</a></li>
                                  </ul>
                               </div>
                            </div>
@@ -555,22 +535,18 @@
                            </div>
                            <div class="sidebar__widget-content">
                               <div class="tags">
-                                 <a href="#">Business</a>
-                                 <a href="#">Landing</a>
-                                 <a href="#">Design</a>
-                                 <a href="#">Digital</a>
-                                 <a href="#">Technology</a>
-                                 <a href="#">UI/UX</a>
-                                 <a href="#">Features</a>
-                                 <a href="#">Pix Saas Blog</a>
+                                 <a href="#">Music Distribution</a>
+                                 <a href="#">Music</a>
+                                 <a href="#">Royalty</a>
+                                 <a href="#">Independent Artists</a>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div class="sidebar__banner" data-background="assets/img/banner/sidebar-banner.jpg">
-                        <h4 class="sidebar__banner-title">Check Out <br>Our free Templates</h4>
-                        <a href="product.html" class="m-btn m-btn-white"> <span></span> free template</a>
-                     </div>
+                     <!-- <div class="sidebar__banner" data-background="assets/img/banner/sidebar-banner.jpg">
+                           <h4 class="sidebar__banner-title">Check Out <br>Our free Templates</h4>
+                           <a href="product.html" class="m-btn m-btn-white"> <span></span> free template</a>
+                        </div> -->
                   </div>
                </div>
             </div>
@@ -586,48 +562,43 @@
          <div class="footer__top pt-90 pb-50">
             <div class="container">
                <div class="row">
-                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4">
+
+                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
                      <div class="footer__widget mb-40 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="footer__widget-head mb-35">
-                           <h4 class="footer__widget-title">Follow our Socials</h4>
+                        <div class="footer__widget-head mb-30">
+                           <h4 class="footer__widget-title">About Us</h4>
                         </div>
                         <div class="footer__widget-content">
-                           <div class="footer__social mb-30">
-                              <ul>
-                                 <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
-                                 <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
-                                 <li><a href="#" class="pin"><i class="fab fa-pinterest-p"></i></a></li>
-                              </ul>
-                           </div>
-                           <div class="footer__lang">
-                              <span><a href="#">US</a> English</span>
-                              <span><a href="#">ES</a> Spanish</span>
-                           </div>
+                           <p class="text-light">Isai Tamil Records is an independent record label based in India that
+                              specializes in distributing music and videos for independent artists worldwide. Our
+                              mission is to help talented artists reach a wider audience and increase their revenue by
+                              providing them with the necessary resources and support.</p>
                         </div>
                      </div>
                   </div>
-                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4">
-                     <div class="footer__widget mb-40 wow fadeInUp" data-wow-delay=".5s">
+
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                     <div class="footer__widget mb-40 wow fadeInUp footer__pl" data-wow-delay=".9s">
                         <div class="footer__widget-head">
-                           <h4 class="footer__widget-title">Products</h4>
+                           <h4 class="footer__widget-title">Company</h4>
                         </div>
                         <div class="footer__widget-content">
                            <div class="footer__link">
                               <ul>
-                                 <li><a href="#">Tutor LMS </a></li>
-                                 <li><a href="#">WP Mega Menu </a></li>
-                                 <li><a href="#">WP Page Builder </a></li>
-                                 <li><a href="#">Themes</a></li>
-                                 <li><a href="#">Interactions</a></li>
+                                 <li><a href="#">About Us</a></li>
+                                 <li><a href="#">Blog</a></li>
+                                 <li><a href="#">Support</a></li>
+                                 <li><a href="#">Pricing</a></li>
+                                 <li><a href="#">comment</a></li>
                               </ul>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4">
-                     <div class="footer__widget mb-40 wow fadeInUp footer__pl" data-wow-delay=".7s">
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-6">
+                     <div class="footer__widget mb-40 wow fadeInUp" data-wow-delay=".7s">
                         <div class="footer__widget-head">
-                           <h4 class="footer__widget-title">Resources</h4>
+                           <h4 class="footer__widget-title">Services</h4>
                         </div>
                         <div class="footer__widget-content">
                            <div class="footer__link">
@@ -642,25 +613,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4">
-                     <div class="footer__widget mb-40 wow fadeInUp" data-wow-delay=".9s">
-                        <div class="footer__widget-head">
-                           <h4 class="footer__widget-title">Products</h4>
-                        </div>
-                        <div class="footer__widget-content">
-                           <div class="footer__link">
-                              <ul>
-                                 <li><a href="#">About Us</a></li>
-                                 <li><a href="#">Blog</a></li>
-                                 <li><a href="#">Support</a></li>
-                                 <li><a href="#">Pricing</a></li>
-                                 <li><a href="#">Contact</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-6">
                      <div class="footer__widget mb-40 wow fadeInUp" data-wow-delay="1.2s">
                         <div class="footer__widget-head">
                            <h4 class="footer__widget-title">Community</h4>
@@ -678,6 +631,22 @@
                         </div>
                      </div>
                   </div>
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-6">
+                     <div class="footer__widget mb-40 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="footer__widget-head mb-35">
+                           <h4 class="footer__widget-title">Follow our Socials</h4>
+                        </div>
+                        <div class="footer__widget-content">
+                           <div class="footer__social mb-30">
+                              <ul>
+                                 <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                                 <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
+                                 <li><a href="#" class="pin"><i class="fab fa-pinterest-p"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
@@ -687,7 +656,8 @@
                   <div class="row">
                      <div class="col-xxl-6 col-xl-6 col-md-6">
                         <div class="footer__copyright wow fadeInUp" data-wow-delay=".5s">
-                           <p>Copyright © 2021 All Rights Reserved, Design by <a href="#">Theme Pure</a></p>
+                           <p>Copyright © 2020-2023 <a href="https://isaitamilrecords.com">Isai Tamil Records.</a> All
+                              Rights Reserved.</p>
                         </div>
                      </div>
                      <div class="col-xxl-6 col-xl-6 col-md-6">
