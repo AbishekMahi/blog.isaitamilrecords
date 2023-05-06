@@ -51,6 +51,30 @@
   box-sizing: border-box;
 }
 
+/*******   Scrollbar   *******/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(83, 83, 83, 0.5);
+  border-radius: 10px;
+  opacity: 60%;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(77, 77, 77, 0.76);
+}
+
 body {
   font-family: "Be Vietnam", sans-serif;
   font-size: 14px;
@@ -65,6 +89,7 @@ a {
 
 .w-img img {
   width: 100%;
+  /* padding: 2rem; */
 }
 
 .m-img img {
@@ -197,29 +222,6 @@ p {
   color: #55545b;
   margin-bottom: 15px;
   line-height: 26px;
-}
-
-/* home videos */
-.video__area .vid-cont {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%;
-  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
-/* Then style the iframe to fit in the container div with full height and width */
-.video__area .video {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0%;
-  left: 0%;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
 }
 
 *::-moz-selection {
@@ -1097,7 +1099,7 @@ p {
 
 .header-transparent .main-menu ul li a::after,
 .header-transparent .main-menu ul li.active>a::after {
-  color: #fff;
+  color: #fff !important;
 }
 
 .header-transparent .main-menu nav>ul>li.active>a,
@@ -1187,7 +1189,7 @@ p {
   position: absolute;
   top: 120%;
   left: 0;
-  width: 200px;
+  width: 230px;
   padding: 17px 0;
   padding-bottom: 25px;
   background: #ffffff;
@@ -1624,6 +1626,7 @@ p {
 /*----------------------------------------*/
 .hero__area {
   position: relative;
+  background-position: center;
 }
 
 .hero__height {
@@ -2308,7 +2311,7 @@ p {
 }
 
 .hero__height {
-  min-height: 950px;
+  min-height: 900px;
 }
 
 /* hero shape keyframe*/
@@ -2418,6 +2421,50 @@ p {
   }
 }
 
+/* home videos */
+.video__area .vid-cont {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.video__area .video {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 3%;
+  left: 3%;
+  bottom: 0;
+  right: 0;
+  width: 94%;
+  height: 94%;
+}
+
+p a {
+  color: #d2173f;
+  font-weight: 500;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.lottie-container {
+  position: relative;
+  z-index: 1;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 2;
+}
+
 /*----------------------------------------*/
 /*  04. CATEGORY CSS START
 /*----------------------------------------*/
@@ -2486,8 +2533,8 @@ p {
 }
 
 .trending__item {
-  padding: 14px;
-  padding-right: 30px;
+  padding: 15px;
+  /* padding-right: 30px; */
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -2531,6 +2578,7 @@ p {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
 }
 
 .trending__thumb-inner {
@@ -2539,6 +2587,19 @@ p {
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
+
+/* @media (max-width: 575px) {
+  .trending__meta {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 975px) {
+  .trending__meta {
+    min-width: 300px;
+  }
+} */
+
 
 @media (max-width: 575px) {
   .trending__thumb img {
@@ -2583,7 +2644,7 @@ p {
 }
 
 .trending__price span {
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: 600;
   color: #dc3545;
 }
@@ -3051,9 +3112,9 @@ p {
 }
 
 .product__thumb-inner {
-  -webkit-border-radius: 6px 6px 0 0;
-  -moz-border-radius: 6px 6px 0 0;
-  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 .product__tag a {
@@ -3448,7 +3509,7 @@ p {
 }
 
 .mt_cat_title:hover {
-  color: #5F3AFB;
+  color: #dc3545;
 }
 
 .mt_cat_caps span {
@@ -3518,11 +3579,11 @@ div.product_new_item a {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-color: #f4f5f7;
+  /* background-color: #f4f5f7; */
   outline: 0;
   padding: 3px 20px;
   padding-bottom: 3px;
-  border: 1px solid #edeef3;
+  border: 2px solid #666666;
   margin: 0 8px;
   margin-bottom: 0px;
   line-height: 28px;
@@ -3605,6 +3666,12 @@ div.product_new_item a {
 
 .latest-comments ul li.children {
   margin-left: 100px;
+}
+
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
 }
 
 @media (max-width: 575px) {
@@ -4508,19 +4575,25 @@ div.product_new_item a {
 /*  11. BANNER CSS START
 /*----------------------------------------*/
 .banner__item {
-  padding: 45px 40px;
-  padding-right: 230px;
+  padding: 42px 40px;
+  /* padding-right: 230px; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  box-shadow: 0px 30px 60px 0px rgba(8, 0, 42, 0.1);
+}
+
+.banner__item h2 {
+  font-size: 24px;
+  font-weight: 800;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner__item {
-    padding-right: 125px;
+    padding-right: auto;
   }
 }
 
@@ -4556,16 +4629,16 @@ div.product_new_item a {
 }
 
 .banner__title {
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 20px !important;
+  line-height: 30px !important;
   color: #ffffff;
-  font-weight: 800;
-  margin-bottom: 18px;
+  font-weight: 500 !important;
+  /* margin-bottom: 18px; */
 }
 
 @media (max-width: 575px) {
   .banner__title {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -4616,8 +4689,8 @@ div.product_new_item a {
 }
 
 .about__count-item>p {
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 800;
   text-transform: uppercase;
   color: #1a152e;
   letter-spacing: 2px;
@@ -4675,7 +4748,7 @@ div.product_new_item a {
 }
 
 .about__text {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 40px;
   color: #0d0b33;
   font-weight: 500;
@@ -7204,6 +7277,7 @@ div.product_new_item a {
 }
 
 .contact__input input,
+.contact__input select,
 .contact__input textarea {
   width: 100%;
   height: 60px;
@@ -7224,6 +7298,7 @@ div.product_new_item a {
 }
 
 .contact__input input:focus,
+.contact__input select:focus,
 .contact__input textarea:focus {
   outline: none;
   background: #ffffff;
@@ -7263,28 +7338,28 @@ div.product_new_item a {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .contact__map {
     margin-top: 50px;
-    height: 470px;
+    height: 450px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact__map {
-    margin-top: 50px;
-    height: 450px;
+    margin-top: 0px;
+    height: 350px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .contact__map {
-    margin-top: 50px;
-    height: 430px;
+    margin-top: 0px;
+    height: auto;
   }
 }
 
 @media (max-width: 575px) {
   .contact__map {
-    margin-top: 50px;
-    height: 400px;
+    margin-top: 0px;
+    height: auto;
   }
 }
 
@@ -7863,10 +7938,18 @@ div.product_new_item a {
 }
 
 .footer__social ul li a.pin {
-  background: #d2173f;
+  background: #ff0000;
 }
 
 .footer__social ul li a.pin:hover {
+  color: #ff0000;
+}
+
+.footer__social ul li a.insta {
+  background: linear-gradient(90deg, #F58529 0%, #DD2A7B 50%, #8134AF 100%);
+}
+
+.footer__social ul li a.insta:hover {
   color: #d2173f;
 }
 
@@ -7903,6 +7986,10 @@ div.product_new_item a {
 
 .footer__link ul li {
   margin-bottom: 9px;
+}
+
+.footer__link {
+  color: #99989e;
 }
 
 .footer__link ul li a {
