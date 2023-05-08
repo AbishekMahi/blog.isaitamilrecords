@@ -6219,6 +6219,9 @@ div.product_new_item a {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
 }
 
 .rc__title {
