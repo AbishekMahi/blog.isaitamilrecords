@@ -6220,8 +6220,8 @@ div.product_new_item a {
   -moz-border-radius: 6px;
   border-radius: 6px;
   object-fit: cover;
-  height: 60px;
-  width: 60px;
+  height: 60px !important;
+  width: 60px !important;
 }
 
 .rc__title {
